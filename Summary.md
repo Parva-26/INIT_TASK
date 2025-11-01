@@ -1,0 +1,9 @@
+# Paper Review
+
+This paper introduced a deep learning model called AlexNet, which completely changed how computers recognize images. The authors trained a deep convolutional neural network (CNN) to classify over 1.2 million images from the ImageNet dataset into 1000 categories. The model had five convolution layers and three fully connected layers, and used some clever ideas like ReLU activation (which helps the model learn faster), data augmentation (creating more training images by flipping or slightly changing them), and dropout (turning off random neurons to avoid overfitting). It was trained on powerful GPUs, which made it much faster than before. The results were incredible — it achieved a top-5 error rate of just 15.3%, way better than any older methods. This paper basically proved that deep learning can automatically learn image features much better than manually designed systems.
+
+# Reflection
+
+One main limitation of this paper is that it needed very high computing power and training time — almost 5–6 days on two GPUs, which was not easily available back then. The model was also very large, with about 60 million parameters, making it memory-heavy and harder to use on smaller systems. Another challenge was its dependence on huge labeled datasets, since the network learns only from examples that are already tagged by humans.
+
+A good improvement could be to make the model more efficient and lightweight, so it performs well even on smaller devices. Later models like VGGNet or ResNet followed this direction and achieved better accuracy with more optimized designs. Also, using self-supervised learning, where the model learns from unlabeled data, could reduce the need for manual labeling. Overall, this paper was revolutionary — it marked the point where deep learning became the main approach in computer vision and inspired most modern AI systems today.
